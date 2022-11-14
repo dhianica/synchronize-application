@@ -1,0 +1,27 @@
+{
+  "name": "nodejs-consumer-rabbitmq",
+  "version": "1.0.0",
+  "description": "Application for consumer rabbitmq",
+  "main": "app.js",
+  "type": "module",
+  "dependencies": {
+    "amqplib": "^0.8.0",
+    "esm": "^3.2.25",
+    "nodemon": "^2.0.13"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.24.2"
+  },
+  "scripts": {
+    "test": "nodemon test",
+    "start": "nodemon --experimental-specifier-resolution=node app"
+  },
+  "keywords": [
+    "nodejs",
+    "rabbitmq"
+  ],
+  "author": "dhianica",
+  "license": "ISC"
+}

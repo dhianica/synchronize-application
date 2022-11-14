@@ -1,0 +1,34 @@
+{
+  "name": "nodejs-producer-rabbitmq",
+  "version": "1.0.0",
+  "description": "Application for producer rabbitmq",
+  "main": "app.js",
+  "type": "module",
+  "dependencies": {
+    "amqplib": "^0.8.0",
+    "chokidar": "^3.5.3",
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "esm": "^3.2.25",
+    "http": "0.0.1-security",
+    "https": "^1.0.0",
+    "moment": "^2.29.1",
+    "nodemon": "^2.0.13"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.24.2"
+  },
+  "scripts": {
+    "test": "nodemon test",
+    "start": "nodemon --experimental-specifier-resolution=node app"
+  },
+  "keywords": [
+    "nodejs",
+    "rabbitmq"
+  ],
+  "author": "dhianica",
+  "license": "ISC"
+}
