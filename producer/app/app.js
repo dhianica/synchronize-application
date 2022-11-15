@@ -2,8 +2,31 @@ import moment from 'moment'
 import amqp from 'amqplib'
 import chokidar from 'chokidar'
 import path from 'path'
+import http from 'http'
+import dotenv from 'dotenv'
+import config from './config'
+dotenv.config()
 
-console.info(`Application date & time starting----@ ${moment().format('YYYY-MM-DD HH:mm:ss')}`)
+const IP = config.env.ip
+const PORT = config.env.port
+
+const httpServer = http.createServer()
+
+httpServer.listen(PORT.http, () => {
+  console.info(`Application date & time starting----@ ${moment().format('YYYY-MM-DD HH:mm:ss')}`)
+  console.info(`API server ip & port running--------@ http://${IP}:${PORT.http}`)
+})
+
+const request = http.get("http://i3.ytimg.com/vi/J---aiyznGQ/mqdefault.jpg", function (response) {
+  response.pipe(file);
+
+  // after download completed close filestream
+  file.on("finish", () => {
+    file.close();
+    console.log("Download Completed");
+  });
+});
+
 // One-liner for current directory
 const watcher = chokidar.watch(path.resolve('D:\\Work\\Murni\\Project\\OTHER\\synchronize-app\\release-app'), {
   ignored: /(^|[\\/\\])\../, // ignore dotfiles
@@ -86,14 +109,14 @@ watcher
                   ifUnused: false,
                   ifEmpty: false,
                 },
-                (error3, ok3) => {
-                  if (error3) {
-                    log(`Failed to delete queue ${queue}`)
-                  } else {
-                    log(`File ${path.basename(paths)
-                    } has been removed`)
-                  }
-                })
+                  (error3, ok3) => {
+                    if (error3) {
+                      log(`Failed to delete queue ${queue}`)
+                    } else {
+                      log(`File ${path.basename(paths)
+                        } has been removed`)
+                    }
+                  })
               } else {
                 log(`No Queue in ${queue}`)
               }

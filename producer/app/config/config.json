@@ -1,0 +1,8 @@
+{
+    "ip" : "127.0.0.1",
+    "port": {
+        "http": 8000
+    },
+    "path_logs": "./../logs/",
+    "path_info": "./../info/"
+}

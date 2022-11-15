@@ -1,0 +1,25 @@
+{
+    "app": "digiteller",
+    "idType": "0001",
+    "scheduleDeleteLog": "* * * * monday",
+    "restricted": [
+        {
+            "NoRek": "1110004590473"
+        },
+        {
+            "NoRek": "1230004590476"
+        }
+    ],
+    "virtualaccount": [
+        {
+            "id": "12345678",
+            "name": "MUCHAMMAD ILHAM",
+            "amount": "200000"
+        },
+        {
+            "id": "87654321",
+            "name": "ILHAM MUCHAMMAD",
+            "amount": "135700"
+        }
+    ]
+}

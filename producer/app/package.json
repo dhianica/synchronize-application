@@ -4,6 +4,16 @@
   "description": "Application for producer rabbitmq",
   "main": "app.js",
   "type": "module",
+  "scripts": {
+    "test": "nodemon test",
+    "start": "nodemon app"
+  },
+  "keywords": [
+    "nodejs",
+    "rabbitmq"
+  ],
+  "author": "dhianica",
+  "license": "ISC",
   "dependencies": {
     "amqplib": "^0.8.0",
     "chokidar": "^3.5.3",
@@ -20,15 +30,5 @@
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.24.2"
-  },
-  "scripts": {
-    "test": "nodemon test",
-    "start": "nodemon --experimental-specifier-resolution=node app"
-  },
-  "keywords": [
-    "nodejs",
-    "rabbitmq"
-  ],
-  "author": "dhianica",
-  "license": "ISC"
+  }
 }
