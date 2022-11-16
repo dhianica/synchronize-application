@@ -38,7 +38,7 @@ for (let i = 0; i < rows.length; i++) {
             // if (n == 5) skip
             if (n == 6) arr[i]["noRecord"] = v.trim()
             // if (n == 7) skip
-            if (n == 8) arr[i]["unknown"] = v.trim()
+            if (n == 8) arr[i]["notDefinition"] = v.trim()
             //if (n == 7) skip
             //if (n == 8) skip
             // if (n == 9) skip
@@ -74,7 +74,7 @@ for (let i = 0; i < rows.length; i++) {
             // if (n == 5) skip
             if (n == 6) arr[i]["noRecord"] = v.trim()
             // if (n == 7) skip
-            if (n == 8) arr[i]["unknown"] = v.trim()
+            if (n == 8) arr[i]["notDefinition"] = v.trim()
             //if (n == 7) skip
             //if (n == 8) skip
             // if (n == 9) skip
@@ -112,7 +112,7 @@ for (let i = 0; i < rows.length; i++) {
                 arr[i]["noRecord"] = noRecord
             }
             // if (n == 7) skip
-            if (n == 8) arr[i]["unknown"] = v.trim()
+            if (n == 8) arr[i]["notDefinition"] = v.trim()
             //if (n == 7) skip
             //if (n == 8) skip
             // if (n == 9) skip
@@ -146,7 +146,7 @@ for (let i = 0; i < rows.length; i++) {
                 arr[i]["noRecord"] = noRecord
             }
             // if (n == 7) skip
-            if (n == 8) arr[i]["unknown"] = v.trim()
+            if (n == 8) arr[i]["notDefinition"] = v.trim()
             //if (n == 7) skip
             //if (n == 8) skip
             if (n == 9) {
@@ -178,7 +178,7 @@ for (let i = 0; i < rows.length; i++) {
                 arr[i]["noRecord"] = noRecord
             }
             // if (n == 7) skip
-            if (n == 8) arr[i]["unknown"] = v.trim()
+            if (n == 8) arr[i]["notDefinition"] = v.trim()
             //if (n == 7) skip
             //if (n == 8) skip
             if (n == 9) {
