@@ -75,8 +75,6 @@ for (let i = 0; i < rows.length; i++) {
             if (n == 6) arr[i]["noRecord"] = v.trim()
             // if (n == 7) skip
             if (n == 8) arr[i]["notDefinition"] = v.trim()
-            //if (n == 7) skip
-            //if (n == 8) skip
             // if (n == 9) skip
             //if (n == 10) skip
             //if (n == 11) skip
@@ -113,8 +111,6 @@ for (let i = 0; i < rows.length; i++) {
             }
             // if (n == 7) skip
             if (n == 8) arr[i]["notDefinition"] = v.trim()
-            //if (n == 7) skip
-            //if (n == 8) skip
             // if (n == 9) skip
             if (n == 10) {
                 const splitIndex = v.split(' ')
@@ -147,8 +143,6 @@ for (let i = 0; i < rows.length; i++) {
             }
             // if (n == 7) skip
             if (n == 8) arr[i]["notDefinition"] = v.trim()
-            //if (n == 7) skip
-            //if (n == 8) skip
             if (n == 9) {
                 const splitIndex = v.split(' ')
                 arr[i]["mutasi"] = splitIndex[0]
@@ -179,8 +173,6 @@ for (let i = 0; i < rows.length; i++) {
             }
             // if (n == 7) skip
             if (n == 8) arr[i]["notDefinition"] = v.trim()
-            //if (n == 7) skip
-            //if (n == 8) skip
             if (n == 9) {
                 const splitIndex = v.split(' ')
                 arr[i]["mutasi"] = splitIndex[0]
